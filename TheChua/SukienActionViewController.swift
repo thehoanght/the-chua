@@ -23,7 +23,14 @@ class SukienActionViewController: UIViewController {
         HinhAnh.layer.borderWidth = 0
         HinhAnh.layer.borderColor = UIColor.whiteColor().CGColor
         HinhAnh.layer.masksToBounds = true
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), {
         
+        self.loadData()
+        
+        })
+        
+    }
+    func loadData() {
         if let getData:NSArray = GetDataModel(Url: LinkServe().GetEventShare).ValuesData{
             print(getData.count)
             if getData.count > 0 {
@@ -39,25 +46,25 @@ class SukienActionViewController: UIViewController {
         }
     }
     func showAlertHeader() {
-        let alert = UIAlertController(title: "Chia sẻ Thẻ Chùa", message: "Hãy chia sẻ tới bạn bè của bạn để kiếm hàng triệu Xu từ chúng tôi.", preferredStyle: .ActionSheet)
-        let alertShareFacebookAction = UIAlertAction(title: "Facebook", style: .Default) { (action) in
-            ShareFacebookModel().ShareFacebook()
-        }
-        
         let UserInfo:NSUserDefaults = NSUserDefaults.standardUserDefaults()
-        
-        let alertCopyLinkAction = UIAlertAction(title: "Copy mã giới thiệu", style: .Default) { (action) in
-            if let userid:String = UserInfo.stringForKey("UserId"){
-                UIPasteboard.generalPasteboard().string = userid
-                
+        if let userid:String = UserInfo.stringForKey("UserId"){
+            let alert = UIAlertController(title: "Chia sẻ Thẻ Chùa", message: "Mã giới thiệu của bạn là \(userid). Hãy chia sẻ Thẻ Chùa tới bạn bè của bạn để kiếm hàng triệu Xu từ chúng tôi.", preferredStyle: .ActionSheet)
+            let alertShareFacebookAction = UIAlertAction(title: "Facebook", style: .Default) { (action) in
+                ShareFacebookModel().ShareFacebook()
             }
+            
+            
+            
+            let alertCopyLinkAction = UIAlertAction(title: "Copy Link", style: .Default) { (action) in
+                UIPasteboard.generalPasteboard().string = LinkServe().LinkShare + userid
+            }
+            let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel, handler: nil)
+            
+            alert.addAction(alertShareFacebookAction)
+            alert.addAction(alertCopyLinkAction)
+            alert.addAction(cancelAction)
+            self.presentViewController(alert, animated: true, completion: nil)
         }
-        let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel, handler: nil)
-        
-        alert.addAction(alertShareFacebookAction)
-        alert.addAction(alertCopyLinkAction)
-        alert.addAction(cancelAction)
-        self.presentViewController(alert, animated: true, completion: nil)
     }
 
     override func didReceiveMemoryWarning() {

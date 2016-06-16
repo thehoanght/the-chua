@@ -510,13 +510,13 @@
                                                     <action selector="trove:" destination="PVB-pi-TFD" eventType="touchUpInside" id="08N-fe-Kv5"/>
                                                 </connections>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bạn nhận được 5000 xu khi tham gia sự kiện" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fzh-f4-Rgg">
-                                                <rect key="frame" x="16" y="536" width="287" height="17"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bạn nhận được xu khi tham gia sự kiện" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fzh-f4-Rgg">
+                                                <rect key="frame" x="35" y="536" width="249" height="17"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Chia sẻ ứng dụng thẻ chùa tới bạn bè và nhận được 5000VNĐ khi bạn bè tải ứng dụng đầu tiên từ Thẻ Chùa" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="DLN-i1-YuY">
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Chia sẻ ứng dụng Thẻ Chùa tới bạn bè và nhận được xu khi bạn bè tải ứng dụng đầu tiên từ Thẻ Chùa." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="DLN-i1-YuY">
                                                 <rect key="frame" x="18" y="92" width="285" height="120"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <constraints>
