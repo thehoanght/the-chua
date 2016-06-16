@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="KGk-i7-Jjw" customClass="SukienTableViewCell" customModule="ThẻChùa" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="442" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="442" height="99"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UBV-xQ-hwh">
+                        <rect key="frame" x="8" y="5" width="426" height="89"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon523" translatesAutoresizingMaskIntoConstraints="NO" id="SYc-DZ-BPb">
+                                <rect key="frame" x="8" y="15" width="60" height="60"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="3fe-U2-erd"/>
+                                    <constraint firstAttribute="width" constant="60" id="Qna-KO-1CU"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cartoons &amp; Caricatures, Logo Designs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zkw-st-4k6">
+                                <rect key="frame" x="86" y="52" width="332" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Graphics &amp; Design" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pkb-MM-IkP">
+                                <rect key="frame" x="86" y="24" width="332" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Pkb-MM-IkP" secondAttribute="trailing" constant="8" id="W0b-3g-pr6"/>
+                            <constraint firstItem="zkw-st-4k6" firstAttribute="top" secondItem="Pkb-MM-IkP" secondAttribute="bottom" constant="8" id="ZXX-wI-tox"/>
+                            <constraint firstItem="SYc-DZ-BPb" firstAttribute="leading" secondItem="UBV-xQ-hwh" secondAttribute="leading" constant="8" id="byF-b8-Bpz"/>
+                            <constraint firstItem="Pkb-MM-IkP" firstAttribute="top" secondItem="UBV-xQ-hwh" secondAttribute="top" constant="24" id="fCX-fE-W7x"/>
+                            <constraint firstItem="Pkb-MM-IkP" firstAttribute="leading" secondItem="UBV-xQ-hwh" secondAttribute="leading" constant="86" id="fVL-5L-fns"/>
+                            <constraint firstItem="SYc-DZ-BPb" firstAttribute="centerY" secondItem="UBV-xQ-hwh" secondAttribute="centerY" id="hBk-Gs-7Ms"/>
+                            <constraint firstItem="Pkb-MM-IkP" firstAttribute="leading" secondItem="SYc-DZ-BPb" secondAttribute="trailing" constant="18" id="hVT-IO-ksg"/>
+                            <constraint firstAttribute="trailing" secondItem="zkw-st-4k6" secondAttribute="trailing" constant="8" id="iss-ZM-D2j"/>
+                            <constraint firstItem="zkw-st-4k6" firstAttribute="leading" secondItem="SYc-DZ-BPb" secondAttribute="trailing" constant="18" id="ldv-Br-Qqu"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="UBV-xQ-hwh" secondAttribute="trailing" constant="8" id="19D-Lp-rZe"/>
+                    <constraint firstItem="UBV-xQ-hwh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="Lh6-YF-1rN"/>
+                    <constraint firstItem="UBV-xQ-hwh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="NSj-4e-oaj"/>
+                    <constraint firstAttribute="bottom" secondItem="UBV-xQ-hwh" secondAttribute="bottom" constant="5" id="Rot-CV-ClQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="hinhanh" destination="SYc-DZ-BPb" id="Pkd-6c-sGE"/>
+                <outlet property="noidung" destination="zkw-st-4k6" id="Ne0-2D-xKJ"/>
+                <outlet property="tensukien" destination="Pkb-MM-IkP" id="QI6-Jo-a0a"/>
+                <outlet property="view" destination="UBV-xQ-hwh" id="yIM-Im-eqe"/>
+            </connections>
+            <point key="canvasLocation" x="-119" y="233"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon523" width="512" height="512"/>
+    </resources>
+</document>

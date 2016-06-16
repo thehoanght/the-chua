@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="OffersViewTableViewCell" customModule="ThẻChùa" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Offer name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s26-5n-lz1">
+                    <rect key="frame" x="80" y="10" width="82" height="20"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dolla" highlightedImage="dolla" translatesAutoresizingMaskIntoConstraints="NO" id="dij-0E-2I0">
+                    <rect key="frame" x="80" y="41" width="16" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="16" id="SCi-LN-Dy4"/>
+                        <constraint firstAttribute="width" constant="16" id="c3d-Ix-K60"/>
+                    </constraints>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="goto" translatesAutoresizingMaskIntoConstraints="NO" id="txu-gL-Yoi">
+                    <rect key="frame" x="289" y="24" width="14" height="23"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon523" translatesAutoresizingMaskIntoConstraints="NO" id="9xO-tg-Ktn">
+                    <rect key="frame" x="12" y="5" width="60" height="60"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="p0h-lo-22N"/>
+                        <constraint firstAttribute="height" constant="60" id="tb0-lc-PYO"/>
+                    </constraints>
+                </imageView>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="aDN-kL-eyo">
+                    <rect key="frame" x="32" y="25" width="20" height="20"/>
+                </activityIndicatorView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pfo-dv-PEQ">
+                    <rect key="frame" x="104" y="42" width="107" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="107" id="VCv-Ib-1d4"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.99607843139999996" green="0.38823529410000002" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="ShareFacebook" translatesAutoresizingMaskIntoConstraints="NO" id="FaU-cm-92z">
+                    <rect key="frame" x="170" y="12" width="15" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="15" id="8sq-cW-N5l"/>
+                        <constraint firstAttribute="height" constant="15" id="zUc-gd-6wG"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="txu-gL-Yoi" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="4c1-ZJ-yC4"/>
+                <constraint firstItem="pfo-dv-PEQ" firstAttribute="leading" secondItem="dij-0E-2I0" secondAttribute="trailing" constant="8" symbolic="YES" id="Aai-Lq-6qs"/>
+                <constraint firstItem="dij-0E-2I0" firstAttribute="top" secondItem="s26-5n-lz1" secondAttribute="bottom" constant="11" id="CNf-gA-Nmi"/>
+                <constraint firstItem="9xO-tg-Ktn" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="DgP-NA-OjR"/>
+                <constraint firstItem="dij-0E-2I0" firstAttribute="leading" secondItem="s26-5n-lz1" secondAttribute="leading" id="Fqn-el-Zmg"/>
+                <constraint firstItem="s26-5n-lz1" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="Kse-cJ-jkn"/>
+                <constraint firstItem="pfo-dv-PEQ" firstAttribute="top" secondItem="s26-5n-lz1" secondAttribute="bottom" constant="12" id="L1V-FQ-9PZ"/>
+                <constraint firstItem="aDN-kL-eyo" firstAttribute="centerX" secondItem="9xO-tg-Ktn" secondAttribute="centerX" id="La4-GY-bPf"/>
+                <constraint firstItem="9xO-tg-Ktn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="12" id="NFG-1H-uqv"/>
+                <constraint firstItem="FaU-cm-92z" firstAttribute="leading" secondItem="s26-5n-lz1" secondAttribute="trailing" constant="8" id="Pc0-sG-1ms"/>
+                <constraint firstAttribute="trailing" secondItem="txu-gL-Yoi" secondAttribute="trailing" constant="17" id="PgS-vv-jEb"/>
+                <constraint firstItem="FaU-cm-92z" firstAttribute="centerY" secondItem="s26-5n-lz1" secondAttribute="centerY" id="UKc-q1-4fA"/>
+                <constraint firstItem="s26-5n-lz1" firstAttribute="leading" secondItem="9xO-tg-Ktn" secondAttribute="trailing" constant="8" id="V3u-za-Yq7"/>
+                <constraint firstItem="aDN-kL-eyo" firstAttribute="centerY" secondItem="9xO-tg-Ktn" secondAttribute="centerY" id="asP-Ll-So2"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="OfferImage" destination="9xO-tg-Ktn" id="DGx-nE-5au"/>
+                <outlet property="OfferName" destination="s26-5n-lz1" id="fM1-Eh-6wN"/>
+                <outlet property="PayoutOffer" destination="pfo-dv-PEQ" id="KyJ-ta-yQL"/>
+                <outlet property="ShareIcon" destination="FaU-cm-92z" id="tDt-fA-sw7"/>
+                <outlet property="loadingActivity" destination="aDN-kL-eyo" id="C4o-7K-41p"/>
+                <outlet property="offerName" destination="s26-5n-lz1" id="1vJ-AX-e9K"/>
+            </connections>
+            <point key="canvasLocation" x="244" y="135"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ShareFacebook" width="293" height="293"/>
+        <image name="dolla" width="16" height="16"/>
+        <image name="goto" width="14" height="23"/>
+        <image name="icon523" width="512" height="512"/>
+    </resources>
+</document>

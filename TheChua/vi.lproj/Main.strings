@@ -1,0 +1,63 @@
+
+/* Class = "UITabBarItem"; title = "Đổi quà"; ObjectID = "4Kx-Gz-fEU"; */
+"4Kx-Gz-fEU.title" = "Đổi quà";
+
+/* Class = "UITextView"; text = "- Tải về và cài đặt\n- Mở và chơi trong tối thiểu 3 phút\n- Quay lại Thẻ Chùa và nhận xu"; ObjectID = "8xO-ZH-MDk"; */
+"8xO-ZH-MDk.text" = "- Tải về và cài đặt\n- Mở và chơi trong tối thiểu 3 phút\n- Quay lại Thẻ Chùa và nhận xu";
+
+/* Class = "UITabBarItem"; title = "Sự kiện"; ObjectID = "Aem-k2-iN9"; */
+"Aem-k2-iN9.title" = "Sự kiện";
+
+/* Class = "UITextView"; text = "Chia sẻ ứng dụng thẻ chùa tới bạn bè và nhận được 5000VNĐ khi bạn bè tải ứng dụng đầu tiên từ Thẻ Chùa"; ObjectID = "DLN-i1-YuY"; */
+"DLN-i1-YuY.text" = "Chia sẻ ứng dụng thẻ chùa tới bạn bè và nhận được 5000VNĐ khi bạn bè tải ứng dụng đầu tiên từ Thẻ Chùa";
+
+/* Class = "UIButton"; normalTitle = "Chia sẻ"; ObjectID = "ESK-Jr-PCA"; */
+"ESK-Jr-PCA.normalTitle" = "Chia sẻ";
+
+/* Class = "UILabel"; text = "Loading"; ObjectID = "IpJ-f1-ZId"; */
+"IpJ-f1-ZId.text" = "Loading";
+
+/* Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "KRo-oP-SHM"; */
+"KRo-oP-SHM.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.";
+
+/* Class = "UITabBarItem"; title = "Săn xu"; ObjectID = "MLQ-jc-V5O"; */
+"MLQ-jc-V5O.title" = "Săn xu";
+
+/* Class = "UIButton"; normalTitle = "1"; ObjectID = "Qxa-PQ-A8D"; */
+"Qxa-PQ-A8D.normalTitle" = "1";
+
+/* Class = "UILabel"; text = "San xu"; ObjectID = "R0z-Hd-xc8"; */
+"R0z-Hd-xc8.text" = "San xu";
+
+/* Class = "UIButton"; normalTitle = "1"; ObjectID = "TOI-Sf-OIC"; */
+"TOI-Sf-OIC.normalTitle" = "1";
+
+/* Class = "UILabel"; text = "32.000 Xu"; ObjectID = "Xyh-kJ-322"; */
+"Xyh-kJ-322.text" = "32.000 Xu";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "YZt-e6-bHj"; */
+"YZt-e6-bHj.text" = "Title";
+
+/* Class = "UIButton"; normalTitle = "1"; ObjectID = "bqd-Lf-tVb"; */
+"bqd-Lf-tVb.normalTitle" = "1";
+
+/* Class = "UIButton"; normalTitle = "1"; ObjectID = "e25-cN-NYm"; */
+"e25-cN-NYm.normalTitle" = "1";
+
+/* Class = "UILabel"; text = "Bạn nhận được 5000 xu khi tham gia sự kiện"; ObjectID = "fzh-f4-Rgg"; */
+"fzh-f4-Rgg.text" = "Bạn nhận được 5000 xu khi tham gia sự kiện";
+
+/* Class = "UILabel"; text = "Chia sẻ Thẻ Chùa"; ObjectID = "mpC-S2-EyS"; */
+"mpC-S2-EyS.text" = "Chia sẻ Thẻ Chùa";
+
+/* Class = "UIButton"; normalTitle = "1"; ObjectID = "ndf-Wo-f7z"; */
+"ndf-Wo-f7z.normalTitle" = "1";
+
+/* Class = "UILabel"; text = "Manga Siêu Đẳng"; ObjectID = "o4G-eU-hAv"; */
+"o4G-eU-hAv.text" = "Manga Siêu Đẳng";
+
+/* Class = "UIButton"; normalTitle = "Tải về"; ObjectID = "oNZ-sX-FXE"; */
+"oNZ-sX-FXE.normalTitle" = "Tải về";
+
+/* Class = "UITabBarItem"; title = "Thêm"; ObjectID = "sni-Lv-Umf"; */
+"sni-Lv-Umf.title" = "Thêm";

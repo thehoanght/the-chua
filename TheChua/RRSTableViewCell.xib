@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="RRSTableViewCell" customModule="ThẻChùa" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="69"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z6B-2j-Ctq">
+                        <rect key="frame" x="5" y="5" width="365" height="59"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon523" translatesAutoresizingMaskIntoConstraints="NO" id="uNI-vm-gCN">
+                                <rect key="frame" x="8" y="2" width="55" height="55"/>
+                                <color key="backgroundColor" red="0.12549019610000001" green="0.80392156859999997" blue="0.62745098040000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="GmV-gM-ySy"/>
+                                    <constraint firstAttribute="width" constant="55" id="iIc-g2-z2p"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nga-HF-8Gg">
+                                <rect key="frame" x="323" y="15" width="38" height="30"/>
+                                <state key="normal" title="Open">
+                                    <color key="titleColor" red="0.99607843139999996" green="0.38823529410000002" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vương Quyền" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L59-BP-Ox5">
+                                <rect key="frame" x="79" y="9" width="105" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="dolla" translatesAutoresizingMaskIntoConstraints="NO" id="0gF-fS-nI6">
+                                <rect key="frame" x="79" y="31" width="16" height="16"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="10c-8G-skp">
+                                <rect key="frame" x="100" y="31" width="24" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.99607843139999996" green="0.38823529410000002" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="10c-8G-skp" firstAttribute="centerY" secondItem="0gF-fS-nI6" secondAttribute="centerY" id="0Ta-bs-eUN"/>
+                            <constraint firstItem="uNI-vm-gCN" firstAttribute="centerY" secondItem="Z6B-2j-Ctq" secondAttribute="centerY" id="Bsy-N9-8bo"/>
+                            <constraint firstItem="nga-HF-8Gg" firstAttribute="centerY" secondItem="Z6B-2j-Ctq" secondAttribute="centerY" id="Ejm-U9-gSY"/>
+                            <constraint firstItem="L59-BP-Ox5" firstAttribute="leading" secondItem="uNI-vm-gCN" secondAttribute="trailing" constant="16" id="Ppi-Pn-IDu"/>
+                            <constraint firstItem="0gF-fS-nI6" firstAttribute="top" secondItem="L59-BP-Ox5" secondAttribute="bottom" constant="1" id="Tl5-3p-39j"/>
+                            <constraint firstItem="0gF-fS-nI6" firstAttribute="leading" secondItem="L59-BP-Ox5" secondAttribute="leading" id="cEO-Gz-fGE"/>
+                            <constraint firstItem="L59-BP-Ox5" firstAttribute="top" secondItem="Z6B-2j-Ctq" secondAttribute="top" constant="9" id="qac-ve-Seo"/>
+                            <constraint firstItem="uNI-vm-gCN" firstAttribute="leading" secondItem="Z6B-2j-Ctq" secondAttribute="leading" constant="8" id="tvr-SF-EjH"/>
+                            <constraint firstAttribute="trailing" secondItem="nga-HF-8Gg" secondAttribute="trailing" constant="4" id="wHP-uF-K74"/>
+                            <constraint firstItem="10c-8G-skp" firstAttribute="leading" secondItem="0gF-fS-nI6" secondAttribute="trailing" constant="5" id="yV7-kb-hmo"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Z6B-2j-Ctq" secondAttribute="trailing" constant="5" id="fCB-S2-4YX"/>
+                    <constraint firstItem="Z6B-2j-Ctq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="jkV-PG-pnI"/>
+                    <constraint firstItem="Z6B-2j-Ctq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="mCg-dV-tij"/>
+                    <constraint firstAttribute="bottom" secondItem="Z6B-2j-Ctq" secondAttribute="bottom" constant="5" id="p3u-dD-hgS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imageLogo" destination="uNI-vm-gCN" id="V8s-FB-D3v"/>
+                <outlet property="nameOffer" destination="L59-BP-Ox5" id="UJF-Cm-1ce"/>
+                <outlet property="openButton" destination="nga-HF-8Gg" id="Qng-Qv-sW4"/>
+                <outlet property="pointRRS" destination="10c-8G-skp" id="mV4-lJ-99z"/>
+                <outlet property="viewInContentView" destination="Z6B-2j-Ctq" id="USu-ux-daj"/>
+            </connections>
+            <point key="canvasLocation" x="255.5" y="196"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="dolla" width="16" height="16"/>
+        <image name="icon523" width="512" height="512"/>
+    </resources>
+</document>
