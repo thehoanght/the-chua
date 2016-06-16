@@ -142,14 +142,16 @@ class ThemViewController: UIViewController,UITableViewDataSource, UITableViewDel
         case 1:
             identifierThem("lichsunhanxuIdentifier")
         case 2:
-            if let dataGet:NSArray = GetDataModel(Url: LinkServe().GetEventShare).ValuesData {
-                if dataGet.count > 0{
-                    let data1 = dataGet[0];
-                    if let urlStore:String = data1["url_app_store"] as? String{
-                        UIApplication.sharedApplication().openURL(NSURL(string: urlStore)!)
+            dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), {
+                if let dataGet:NSArray = GetDataModel(Url: LinkServe().GetEventShare).ValuesData {
+                    if dataGet.count > 0{
+                        let data1 = dataGet[0];
+                        if let urlStore:String = data1["url_app_store"] as? String{
+                            UIApplication.sharedApplication().openURL(NSURL(string: urlStore)!)
+                        }
                     }
                 }
-            }
+            })
         case 3:
             identifierThem("dieukhoanIdentifier")
         case 4:

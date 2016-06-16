@@ -8,8 +8,8 @@
 /* Class = "UITabBarItem"; title = "Sự kiện"; ObjectID = "Aem-k2-iN9"; */
 "Aem-k2-iN9.title" = "Sự kiện";
 
-/* Class = "UITextView"; text = "Chia sẻ ứng dụng thẻ chùa tới bạn bè và nhận được 5000VNĐ khi bạn bè tải ứng dụng đầu tiên từ Thẻ Chùa"; ObjectID = "DLN-i1-YuY"; */
-"DLN-i1-YuY.text" = "Chia sẻ ứng dụng thẻ chùa tới bạn bè và nhận được 5000VNĐ khi bạn bè tải ứng dụng đầu tiên từ Thẻ Chùa";
+/* Class = "UITextView"; text = ""; ObjectID = "DLN-i1-YuY"; */
+"DLN-i1-YuY.text" = "";
 
 /* Class = "UIButton"; normalTitle = "Chia sẻ"; ObjectID = "ESK-Jr-PCA"; */
 "ESK-Jr-PCA.normalTitle" = "Chia sẻ";
@@ -44,8 +44,8 @@
 /* Class = "UIButton"; normalTitle = "1"; ObjectID = "e25-cN-NYm"; */
 "e25-cN-NYm.normalTitle" = "1";
 
-/* Class = "UILabel"; text = "Bạn nhận được 5000 xu khi tham gia sự kiện"; ObjectID = "fzh-f4-Rgg"; */
-"fzh-f4-Rgg.text" = "Bạn nhận được 5000 xu khi tham gia sự kiện";
+/* Class = "UILabel"; text = "Bạn nhận được Xu khi tham gia sự kiện"; ObjectID = "fzh-f4-Rgg"; */
+"fzh-f4-Rgg.text" = "";
 
 /* Class = "UILabel"; text = "Chia sẻ Thẻ Chùa"; ObjectID = "mpC-S2-EyS"; */
 "mpC-S2-EyS.text" = "Chia sẻ Thẻ Chùa";

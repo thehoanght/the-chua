@@ -23,27 +23,25 @@ class SukienActionViewController: UIViewController {
         HinhAnh.layer.borderWidth = 0
         HinhAnh.layer.borderColor = UIColor.whiteColor().CGColor
         HinhAnh.layer.masksToBounds = true
-        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), {
-        
         self.loadData()
-        
-        })
-        
     }
     func loadData() {
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), {
         if let getData:NSArray = GetDataModel(Url: LinkServe().GetEventShare).ValuesData{
+            dispatch_async(dispatch_get_main_queue(), {
             print(getData.count)
             if getData.count > 0 {
                 let maindata = getData[0]
-                let pointShare:Int = maindata["point"] as! Int
+                let pointShare:Int = (maindata["point"] as! NSString).integerValue
                 let noidung:String = maindata["noidung"] as! String
                 let title:String = maindata["title"] as! String
-                TenSuKien.text = title
-                NoiDung.text = noidung
-                bottomLabel.text = "Bạn nhận được \(pointShare) Xu mời được 1 người mới"
-                
+                self.TenSuKien.text = title
+                self.NoiDung.text = noidung
+                self.bottomLabel.text = "Bạn nhận được \(pointShare) Xu mời được 1 người mới"
             }
+            })
         }
+        })
     }
     func showAlertHeader() {
         let UserInfo:NSUserDefaults = NSUserDefaults.standardUserDefaults()

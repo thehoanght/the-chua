@@ -34,7 +34,7 @@ class SanxuCustomTableViewHeaderFooterView: UITableViewHeaderFooterView {
         if let getData:NSArray = GetDataModel(Url: LinkServe().GetEventShare).ValuesData {
             if getData.count > 0 {
                 let maindata = getData[0]
-                let pointShare:Int = maindata["point"] as! Int
+                let pointShare:Int = (maindata["point"] as! NSString).integerValue
                 PointBanner.text = "\(pointShare) Xu/ 1 lượt cài đặt"
             }
         }
