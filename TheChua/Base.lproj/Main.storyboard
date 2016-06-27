@@ -9,7 +9,7 @@
         <!--Sanxu View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="SanxuViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="SanxuViewController" customModule="Thẻ_Chùa" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SanxuViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="SanxuViewController" customModule="The_Chua" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -81,7 +81,7 @@
         <!--View Controller-->
         <scene sceneID="aCk-sN-738">
             <objects>
-                <viewController id="wVx-Rq-w1s" customClass="RRSViewController" customModule="Thẻ_Chùa" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="wVx-Rq-w1s" customClass="RRSViewController" customModule="The_Chua" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="GnQ-E5-TuA"/>
                         <viewControllerLayoutGuide type="bottom" id="F26-5t-KSS"/>
@@ -119,7 +119,7 @@
         <!--Sanxu Download View Controller-->
         <scene sceneID="0UE-eU-gSw">
             <objects>
-                <viewController id="h36-zO-1Kv" customClass="SanxuDownloadViewController" customModule="Thẻ_Chùa" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="h36-zO-1Kv" customClass="SanxuDownloadViewController" customModule="The_Chua" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="RGE-Hb-cUv"/>
                         <viewControllerLayoutGuide type="bottom" id="CVo-tl-QQH"/>
@@ -239,7 +239,7 @@
         <!--Login View Controller-->
         <scene sceneID="ru8-md-Vla">
             <objects>
-                <viewController storyboardIdentifier="LoginViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="LDc-x6-XCB" customClass="LoginViewController" customModule="Thẻ_Chùa" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="LDc-x6-XCB" customClass="LoginViewController" customModule="The_Chua" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5dy-2B-Hmu"/>
                         <viewControllerLayoutGuide type="bottom" id="fZF-PP-UbV"/>
@@ -381,7 +381,7 @@
         <!--Sukien View Controller-->
         <scene sceneID="All-Vp-336">
             <objects>
-                <viewController id="vlQ-an-ygt" customClass="SukienViewController" customModule="Thẻ_Chùa" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vlQ-an-ygt" customClass="SukienViewController" customModule="The_Chua" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3Xo-Zo-uuL"/>
                         <viewControllerLayoutGuide type="bottom" id="Lfr-pR-i26"/>
@@ -454,7 +454,7 @@
         <!--Sukien Action View Controller-->
         <scene sceneID="3ZO-D1-1Wa">
             <objects>
-                <viewController wantsFullScreenLayout="YES" id="PVB-pi-TFD" customClass="SukienActionViewController" customModule="Thẻ_Chùa" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController wantsFullScreenLayout="YES" id="PVB-pi-TFD" customClass="SukienActionViewController" customModule="The_Chua" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="g7Q-Yw-PLb"/>
                         <viewControllerLayoutGuide type="bottom" id="G4E-eX-0Ri"/>
@@ -660,7 +660,7 @@
         <!--Show Su Kien From Server View Controller-->
         <scene sceneID="yOs-tN-F1N">
             <objects>
-                <viewController id="4OR-Yw-MuE" customClass="ShowSuKienFromServerViewController" customModule="Thẻ_Chùa" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="4OR-Yw-MuE" customClass="ShowSuKienFromServerViewController" customModule="The_Chua" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cLJ-YY-Zrr"/>
                         <viewControllerLayoutGuide type="bottom" id="jvc-AD-c75"/>
@@ -746,7 +746,7 @@
         <!--Doiqua View Controller-->
         <scene sceneID="rze-kv-rC5">
             <objects>
-                <viewController id="2rS-tF-2hh" customClass="DoiquaViewController" customModule="Thẻ_Chùa" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="2rS-tF-2hh" customClass="DoiquaViewController" customModule="The_Chua" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="DY3-ID-3dF"/>
                         <viewControllerLayoutGuide type="bottom" id="z1Z-yN-diV"/>
@@ -847,7 +847,7 @@
         <!--Them View Controller-->
         <scene sceneID="I4O-6a-Ozw">
             <objects>
-                <viewController id="GzC-di-xdv" customClass="ThemViewController" customModule="Thẻ_Chùa" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="GzC-di-xdv" customClass="ThemViewController" customModule="The_Chua" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="A5u-hO-Ib3"/>
                         <viewControllerLayoutGuide type="bottom" id="yBT-lz-2cY"/>
@@ -944,7 +944,7 @@
         <!--History Redeem View Controller-->
         <scene sceneID="Ye7-Pz-xr3">
             <objects>
-                <viewController id="gEy-zK-4Zh" customClass="HistoryRedeemViewController" customModule="Thẻ_Chùa" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="gEy-zK-4Zh" customClass="HistoryRedeemViewController" customModule="The_Chua" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="m8f-5d-ozC"/>
                         <viewControllerLayoutGuide type="bottom" id="6cQ-Fi-gjb"/>
@@ -986,7 +986,7 @@
         <!--Lichsunhanxu View Controller-->
         <scene sceneID="8jc-vp-JU8">
             <objects>
-                <viewController id="cKD-at-E79" customClass="LichsunhanxuViewController" customModule="Thẻ_Chùa" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="cKD-at-E79" customClass="LichsunhanxuViewController" customModule="The_Chua" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="CMC-bC-Pyj"/>
                         <viewControllerLayoutGuide type="bottom" id="POs-my-ifX"/>
@@ -1027,7 +1027,7 @@
         <!--Dieu Khoan View Controller-->
         <scene sceneID="TLl-2w-dlj">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="tng-00-1ry" customClass="DieuKhoanViewController" customModule="Thẻ_Chùa" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="tng-00-1ry" customClass="DieuKhoanViewController" customModule="The_Chua" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="QJP-sr-BHq"/>
                         <viewControllerLayoutGuide type="bottom" id="oxl-wU-KKS"/>
@@ -1061,7 +1061,7 @@
         <!--Thongtin View Controller-->
         <scene sceneID="VAr-BQ-ROK">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="eJg-0Q-OWQ" customClass="ThongtinViewController" customModule="Thẻ_Chùa" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="eJg-0Q-OWQ" customClass="ThongtinViewController" customModule="The_Chua" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="12C-Lw-ujJ"/>
                         <viewControllerLayoutGuide type="bottom" id="mmK-8I-fcH"/>

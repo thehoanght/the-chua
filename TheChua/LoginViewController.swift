@@ -19,7 +19,7 @@ class LoginViewController: UIViewController,FBSDKLoginButtonDelegate {
     @IBOutlet weak var loginButton: UIButton!
     let UserInfo:NSUserDefaults = NSUserDefaults.standardUserDefaults()
     
-    let facebookReadPermissios = ["public_profile","email","user_friends"]
+    let facebookReadPermissios = ["public_profile","email","user_friends"]//
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -118,7 +118,9 @@ class LoginViewController: UIViewController,FBSDKLoginButtonDelegate {
                 let url = LinkServe().UrlCheckUser
                 let uuid:String = UIDevice.currentDevice().identifierForVendor!.UUIDString
                 let postString = "email=\(email)&facebookId=\(id)&fullname=\(name)&uuid=\(uuid)"
-                let request = NSMutableURLRequest(URL: NSURL(string: url)!, cachePolicy: .ReturnCacheDataElseLoad, timeoutInterval: 10.0)
+                print(postString)
+                
+                let request = NSMutableURLRequest(URL: NSURL(string: url)!)
                 request.allHTTPHeaderFields = headers
                 let session = NSURLSession.sharedSession()
                 request.HTTPMethod = "POST"
@@ -144,26 +146,28 @@ class LoginViewController: UIViewController,FBSDKLoginButtonDelegate {
                         
                     default :
                         self.UserInfo.setObject(email, forKey: "Email")
-                        let token = resultString
+                        var token = resultString
+                        token = token.stringByReplacingOccurrencesOfString("\n\n", withString: "")
                         self.UserInfo.setObject(token, forKey: "Token")
                         self.UserInfo.synchronize()
                         self.UserInfo.setObject(id, forKey: "FacebookId")
                         self.UserInfo.setObject(name, forKey: "Name")
                         self.UserInfo.setObject(1, forKey: "ISLOGGED")
                         self.UserInfo.synchronize()
+                        self.loginButton.hidden = true
+                        self.lbLoading.hidden = false
+                        self.loadingActivity.hidden = false
+                        self.loadingActivity.startAnimating()
                         if let data:NSArray = GetDataModel(Url: LinkServe().UrlgetUserId + token).ValuesData {
                             if  data.count > 0{
+                                
                                 let dataUser = data[0]
                                 let userId = dataUser["uid"]
                                 let invitedBy = dataUser["invitedBy"]
                                 self.UserInfo.setObject(invitedBy, forKey: "InvitedBy")
                                 self.UserInfo.setObject(userId, forKey: "UserId")
                                 self.UserInfo.synchronize()
-                                dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), {
-                                    dispatch_async(dispatch_get_main_queue(), {
-                                        self.gotoTabBar()
-                                    })
-                                })
+                                self.gotoTabBar()
                             }
                         }
                         

@@ -15,6 +15,7 @@ class OffersViewTableViewCell: UITableViewCell {
     @IBOutlet weak var OfferImage: UIImageViewAsync!
     @IBOutlet weak var PayoutOffer: UILabel!
     
+    @IBOutlet weak var AndroidIcon: UIImageView!
     @IBOutlet weak var ShareIcon: UIImageView!
     
     @IBOutlet weak var loadingActivity: UIActivityIndicatorView!

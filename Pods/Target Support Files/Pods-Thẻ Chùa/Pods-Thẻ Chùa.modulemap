@@ -1,6 +1,0 @@
-framework module Pods_Th__Ch_a {
-  umbrella header "Pods-Thẻ Chùa-umbrella.h"
-
-  export *
-  module * { export * }
-}

@@ -1,4 +1,4 @@
-//
+    //
 //  UpdatePoint.swift
 //  Thẻ Chùa
 //

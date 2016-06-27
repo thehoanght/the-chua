@@ -91,7 +91,7 @@ class SanxuDownloadViewController: UIViewController {
             } else {
                 OffersDownloadInfo.setObject("Dowloading", forKey: "StatusDownload\(OfferId)")
                 OffersDownloadInfo.synchronize()
-                let url = NSURL(string: LinkServe().UrlTracking+"?UserId=\(UserId)&OfferId=\(OfferId)")
+                let url = NSURL(string: LinkServe().UrlTracking+"?uid=\(UserId)&OfferId=\(OfferId)")
                 showSafariBrowser(url!)
                 return
             }
@@ -149,13 +149,14 @@ class SanxuDownloadViewController: UIViewController {
             } else {
                 OffersDownloadInfo.setObject("Downloading", forKey: "StatusDownload\(OfferId)")
                 OffersDownloadInfo.synchronize()
-                let url = NSURL(string: LinkServe().UrlTracking+"?UserId=\(UserId)&OfferId=\(OfferId)")
+                let url = NSURL(string: LinkServe().UrlTracking+"?uid=\(UserId)&OfferId=\(OfferId)")
                 showSafariBrowser(url!)
                 return
             }
         }
     }
     func showSafariBrowser(url:NSURL) {
+        print(url)
         let safariVC = SFSafariViewController(URL: url)
         presentViewController(safariVC, animated: true, completion: nil)
     }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		50FE5E4650F8F014D0EAB740 /* Pods_The_Chua.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 325E8F98EDC28995605F26A6 /* Pods_The_Chua.framework */; };
 		5602308C1CF31BB2005ECBA5 /* TimeOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5602308B1CF31BB2005ECBA5 /* TimeOut.swift */; };
 		5602308E1CF33E48005ECBA5 /* CardsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5602308D1CF33E48005ECBA5 /* CardsModel.swift */; };
 		56041CFF1CD5CDFA00CA1F82 /* CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 56041CFD1CD5CDFA00CA1F82 /* CoreData.xcdatamodeld */; };
@@ -70,7 +71,6 @@
 		56F45FFD1CA0326300FB9016 /* SukienViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F45FFC1CA0326300FB9016 /* SukienViewController.swift */; };
 		56F704C91CB14D52007F457A /* OffersInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F704C81CB14D52007F457A /* OffersInfo.swift */; };
 		56F7B1801CBBE4310091889C /* UserInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F7B17F1CBBE4310091889C /* UserInfoModel.swift */; };
-		D8FF2BD19933620A552A4E51 /* Pods_Th__Ch_a.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF0BFDF42514E56031B2F54 /* Pods_Th__Ch_a.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +91,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06DC8CA8993E555E643B98AF /* Pods-The Chua.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Chua.debug.xcconfig"; path = "Pods/Target Support Files/Pods-The Chua/Pods-The Chua.debug.xcconfig"; sourceTree = "<group>"; };
+		325E8F98EDC28995605F26A6 /* Pods_The_Chua.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_The_Chua.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5602308B1CF31BB2005ECBA5 /* TimeOut.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeOut.swift; sourceTree = "<group>"; };
 		5602308D1CF33E48005ECBA5 /* CardsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsModel.swift; sourceTree = "<group>"; };
 		56041CFE1CD5CDFA00CA1F82 /* CoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreData.xcdatamodel; sourceTree = "<group>"; };
@@ -105,16 +107,16 @@
 		5644EA7F1D091884006DB482 /* RRSTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RRSTableViewCell.xib; sourceTree = "<group>"; };
 		564AA41B1C9FE16F00ACC2C6 /* OffersView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OffersView.xib; sourceTree = "<group>"; };
 		564AA41D1C9FE63500ACC2C6 /* OffersViewTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OffersViewTableViewCell.swift; sourceTree = "<group>"; };
-		566123691C9D334C00DD6E2E /* Thẻ Chùa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Thẻ Chùa.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		566123691C9D334C00DD6E2E /* The Chua.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Chua.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5661236C1C9D334C00DD6E2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5661236E1C9D334C00DD6E2E /* SanxuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SanxuViewController.swift; sourceTree = "<group>"; };
 		566123711C9D334C00DD6E2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		566123731C9D334C00DD6E2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		566123781C9D334C00DD6E2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5661237D1C9D334C00DD6E2E /* Dag.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Dag.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5661237D1C9D334C00DD6E2E /* The Chua.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "The Chua.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		566123811C9D334C00DD6E2E /* TheChuaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheChuaTests.swift; sourceTree = "<group>"; };
 		566123831C9D334C00DD6E2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		566123881C9D334C00DD6E2E /* Dag.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Dag.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		566123881C9D334C00DD6E2E /* The Chua.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "The Chua.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5661238C1C9D334C00DD6E2E /* TheChuaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheChuaUITests.swift; sourceTree = "<group>"; };
 		5661238E1C9D334C00DD6E2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		566146001CDB813D0042E103 /* CheckConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckConnection.swift; sourceTree = "<group>"; };
@@ -160,9 +162,7 @@
 		56F45FFC1CA0326300FB9016 /* SukienViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SukienViewController.swift; sourceTree = "<group>"; };
 		56F704C81CB14D52007F457A /* OffersInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OffersInfo.swift; sourceTree = "<group>"; };
 		56F7B17F1CBBE4310091889C /* UserInfoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoModel.swift; sourceTree = "<group>"; };
-		8825A515BD5BD07F64BBA7E8 /* Pods-Thẻ Chùa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Thẻ Chùa.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Thẻ Chùa/Pods-Thẻ Chùa.debug.xcconfig"; sourceTree = "<group>"; };
-		CEF0BFDF42514E56031B2F54 /* Pods_Th__Ch_a.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Th__Ch_a.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E4FF6037D550A4A3D5D34439 /* Pods-Thẻ Chùa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Thẻ Chùa.release.xcconfig"; path = "Pods/Target Support Files/Pods-Thẻ Chùa/Pods-Thẻ Chùa.release.xcconfig"; sourceTree = "<group>"; };
+		7D2106E8BEFBC2D1F9FC1E11 /* Pods-The Chua.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Chua.release.xcconfig"; path = "Pods/Target Support Files/Pods-The Chua/Pods-The Chua.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,7 +173,7 @@
 				561BC3F61D117D300031B386 /* FBSDKLoginKit.framework in Frameworks */,
 				561BC3F51D117D300031B386 /* FBSDKCoreKit.framework in Frameworks */,
 				561BC3F71D117D300031B386 /* FBSDKShareKit.framework in Frameworks */,
-				D8FF2BD19933620A552A4E51 /* Pods_Th__Ch_a.framework in Frameworks */,
+				50FE5E4650F8F014D0EAB740 /* Pods_The_Chua.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,9 +248,9 @@
 		5661236A1C9D334C00DD6E2E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				566123691C9D334C00DD6E2E /* Thẻ Chùa.app */,
-				5661237D1C9D334C00DD6E2E /* Dag.xctest */,
-				566123881C9D334C00DD6E2E /* Dag.xctest */,
+				566123691C9D334C00DD6E2E /* The Chua.app */,
+				5661237D1C9D334C00DD6E2E /* The Chua.xctest */,
+				566123881C9D334C00DD6E2E /* The Chua.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -402,7 +402,7 @@
 		933DFB1AC3754743F410741A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CEF0BFDF42514E56031B2F54 /* Pods_Th__Ch_a.framework */,
+				325E8F98EDC28995605F26A6 /* Pods_The_Chua.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -410,8 +410,8 @@
 		A5DAB22AE903E418A3B82636 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				8825A515BD5BD07F64BBA7E8 /* Pods-Thẻ Chùa.debug.xcconfig */,
-				E4FF6037D550A4A3D5D34439 /* Pods-Thẻ Chùa.release.xcconfig */,
+				06DC8CA8993E555E643B98AF /* Pods-The Chua.debug.xcconfig */,
+				7D2106E8BEFBC2D1F9FC1E11 /* Pods-The Chua.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -419,9 +419,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		566123681C9D334C00DD6E2E /* Thẻ Chùa */ = {
+		566123681C9D334C00DD6E2E /* The Chua */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 566123911C9D334C00DD6E2E /* Build configuration list for PBXNativeTarget "Thẻ Chùa" */;
+			buildConfigurationList = 566123911C9D334C00DD6E2E /* Build configuration list for PBXNativeTarget "The Chua" */;
 			buildPhases = (
 				936E230750C560AF994C273D /* [CP] Check Pods Manifest.lock */,
 				566123651C9D334C00DD6E2E /* Sources */,
@@ -434,9 +434,9 @@
 			);
 			dependencies = (
 			);
-			name = "Thẻ Chùa";
+			name = "The Chua";
 			productName = TheChua;
-			productReference = 566123691C9D334C00DD6E2E /* Thẻ Chùa.app */;
+			productReference = 566123691C9D334C00DD6E2E /* The Chua.app */;
 			productType = "com.apple.product-type.application";
 		};
 		5661237C1C9D334C00DD6E2E /* DagTests */ = {
@@ -454,7 +454,7 @@
 			);
 			name = DagTests;
 			productName = TheChuaTests;
-			productReference = 5661237D1C9D334C00DD6E2E /* Dag.xctest */;
+			productReference = 5661237D1C9D334C00DD6E2E /* The Chua.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		566123871C9D334C00DD6E2E /* DagUITests */ = {
@@ -472,7 +472,7 @@
 			);
 			name = DagUITests;
 			productName = TheChuaUITests;
-			productReference = 566123881C9D334C00DD6E2E /* Dag.xctest */;
+			productReference = 566123881C9D334C00DD6E2E /* The Chua.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -483,7 +483,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0720;
-				ORGANIZATIONNAME = "Hoang Dao";
+				ORGANIZATIONNAME = "The Hoang Dao";
 				TargetAttributes = {
 					566123681C9D334C00DD6E2E = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -516,7 +516,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				566123681C9D334C00DD6E2E /* Thẻ Chùa */,
+				566123681C9D334C00DD6E2E /* The Chua */,
 				5661237C1C9D334C00DD6E2E /* DagTests */,
 				566123871C9D334C00DD6E2E /* DagUITests */,
 			);
@@ -576,7 +576,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Thẻ Chùa/Pods-Thẻ Chùa-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-The Chua/Pods-The Chua-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		447BDF644260CEB02FED31BC /* [CP] Copy Pods Resources */ = {
@@ -591,7 +591,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Thẻ Chùa/Pods-Thẻ Chùa-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-The Chua/Pods-The Chua-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		936E230750C560AF994C273D /* [CP] Check Pods Manifest.lock */ = {
@@ -682,12 +682,12 @@
 /* Begin PBXTargetDependency section */
 		5661237F1C9D334C00DD6E2E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 566123681C9D334C00DD6E2E /* Thẻ Chùa */;
+			target = 566123681C9D334C00DD6E2E /* The Chua */;
 			targetProxy = 5661237E1C9D334C00DD6E2E /* PBXContainerItemProxy */;
 		};
 		5661238A1C9D334C00DD6E2E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 566123681C9D334C00DD6E2E /* Thẻ Chùa */;
+			target = 566123681C9D334C00DD6E2E /* The Chua */;
 			targetProxy = 566123891C9D334C00DD6E2E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -749,7 +749,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				"OTHER_LDFLAGS[arch=*]" = /Users/hoangdao/Documents/FacebookSDK/Bolts.framework/Bolts;
-				PROVISIONING_PROFILE = "8e4fee35-46db-4a5b-ad42-97868579f66f";
+				PROVISIONING_PROFILE = "0d8f0b99-f75f-4435-a632-b69e7cbfb91d";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -793,7 +793,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				"OTHER_LDFLAGS[arch=*]" = /Users/hoangdao/Documents/FacebookSDK/Bolts.framework/Bolts;
-				PROVISIONING_PROFILE = "8e4fee35-46db-4a5b-ad42-97868579f66f";
+				PROVISIONING_PROFILE = "0d8f0b99-f75f-4435-a632-b69e7cbfb91d";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -802,50 +802,54 @@
 		};
 		566123921C9D334C00DD6E2E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8825A515BD5BD07F64BBA7E8 /* Pods-Thẻ Chùa.debug.xcconfig */;
+			baseConfigurationReference = 06DC8CA8993E555E643B98AF /* Pods-The Chua.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: daothehoang@gmail.com (K3C48BR7QA)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: daothehoang@gmail.com (K3C48BR7QA)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"~/Documents/FacebookSDK/**",
 					"$(inherited)",
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = TheChua/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = hoangdao.vn.thechua;
+				PRODUCT_BUNDLE_IDENTIFIER = hoangdao.TheChua;
 				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "8e4fee35-46db-4a5b-ad42-97868579f66f";
+				PROVISIONING_PROFILE = "a4e90ce3-3779-4b92-a0cb-78c4d2cf2e4f";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/TheChua/TheChua-Bridging-Header.h";
-				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(SWIFT_MODULE_NAME)-Swift.h";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		566123931C9D334C00DD6E2E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E4FF6037D550A4A3D5D34439 /* Pods-Thẻ Chùa.release.xcconfig */;
+			baseConfigurationReference = 7D2106E8BEFBC2D1F9FC1E11 /* Pods-The Chua.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: daothehoang@gmail.com (K3C48BR7QA)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: daothehoang@gmail.com (K3C48BR7QA)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"~/Documents/FacebookSDK/**",
 					"$(inherited)",
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = TheChua/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = hoangdao.vn.thechua;
+				PRODUCT_BUNDLE_IDENTIFIER = hoangdao.TheChua;
 				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "8e4fee35-46db-4a5b-ad42-97868579f66f";
+				PROVISIONING_PROFILE = "a4e90ce3-3779-4b92-a0cb-78c4d2cf2e4f";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/TheChua/TheChua-Bridging-Header.h";
-				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(SWIFT_MODULE_NAME)-Swift.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -858,7 +862,7 @@
 				INFOPLIST_FILE = TheChuaTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hoangdao.TheChuaTests;
-				PRODUCT_NAME = Dag;
+				PRODUCT_NAME = "The Chua";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dag.app/Dag";
 			};
 			name = Debug;
@@ -870,7 +874,7 @@
 				INFOPLIST_FILE = TheChuaTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hoangdao.TheChuaTests;
-				PRODUCT_NAME = Dag;
+				PRODUCT_NAME = "The Chua";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dag.app/Dag";
 			};
 			name = Release;
@@ -883,7 +887,7 @@
 				INFOPLIST_FILE = TheChuaUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hoangdao.TheChuaUITests;
-				PRODUCT_NAME = Dag;
+				PRODUCT_NAME = "The Chua";
 				TEST_TARGET_NAME = TheChua;
 				USES_XCTRUNNER = YES;
 			};
@@ -897,7 +901,7 @@
 				INFOPLIST_FILE = TheChuaUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hoangdao.TheChuaUITests;
-				PRODUCT_NAME = Dag;
+				PRODUCT_NAME = "The Chua";
 				TEST_TARGET_NAME = TheChua;
 				USES_XCTRUNNER = YES;
 			};
@@ -915,7 +919,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		566123911C9D334C00DD6E2E /* Build configuration list for PBXNativeTarget "Thẻ Chùa" */ = {
+		566123911C9D334C00DD6E2E /* Build configuration list for PBXNativeTarget "The Chua" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				566123921C9D334C00DD6E2E /* Debug */,

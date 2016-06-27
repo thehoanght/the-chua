@@ -193,13 +193,14 @@ class SukienViewController: UIViewController,UITableViewDelegate,UITableViewData
                     self.presentViewController(safariVC, animated: true, completion: nil)
                 }
             })
+            //TODO:: Ma gioi thieu
             let nhapcodeAlertAction:UIAlertAction = UIAlertAction(title: "Nhập CODE", style: .Default, handler: { (action) in
                 let alert = UIAlertController(title: "Nhập mã giới thiệu", message: "Nhập mã giới thiệu để nhận xu", preferredStyle: .Alert)
                 alert.addTextFieldWithConfigurationHandler(configurationTextField)
                 let confimAlertAction = UIAlertAction(title: "Xác nhận", style: .Default, handler: { (action) in
                     let invitedCode:String = tField.text!
                     print(invitedCode)
-                    let postString = "&token=\(UserModel().Token())&inviteCode=\(invitedCode)"
+                    let postString = "token=\(UserModel().Token())&inviteCode=\(invitedCode)"
                     PostMethod().pushString(LinkServe().UrlInvite + UserModel().Token(), postString: postString)
                     let data:NSArray = GetDataModel(Url: LinkServe().UrlgetUserId + UserModel().Token()).ValuesData
                     if data != NSArray(){

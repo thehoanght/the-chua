@@ -26,7 +26,6 @@ class SukienTableViewCell: UITableViewCell {
         hinhanh.layer.borderWidth = 1
         hinhanh.layer.borderColor = UIColor.whiteColor().CGColor
         hinhanh.clipsToBounds = true
-        hinhanh.backgroundColor = UIColor(patternImage: UIImage(named: "NoImageAvailable")!)
 
     }
 

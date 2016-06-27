@@ -67,7 +67,6 @@ class SanxuViewController: UIViewController,UITableViewDelegate,UITableViewDataS
         tableView.registerNib(nibEmptyOfferView, forCellReuseIdentifier: "cellEmpty")
         
         tableView.tableFooterView = UIView(frame: CGRectZero)
-        dispatch_after(0, dispatch_get_main_queue(), {
             dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), {
                 print("Load data")
                 self.getDataTableView()
@@ -77,8 +76,6 @@ class SanxuViewController: UIViewController,UITableViewDelegate,UITableViewDataS
                 self.tableView.reloadData()
                 })
             })
-        })
-        
     }
     func checkStatus() {
         if let token:String = UserModel().Token() {
@@ -191,9 +188,10 @@ class SanxuViewController: UIViewController,UITableViewDelegate,UITableViewDataS
                         let maindata = Offers[i]
                         let offerid = maindata["offerId"] as! String
                         let typepromote = maindata["typepromote"] as! String
+                        let OS = maindata["OS"] as! String
                         let OffersDownloadInfo:NSUserDefaults = NSUserDefaults.standardUserDefaults()
                         let status = OffersDownloadInfo.stringForKey("StatusDownload\(offerid)")
-                        print(status,"dieu kien: ",(status != "Installed" || typepromote != "instant") )
+                        print(status,"dieu kien: ",(status != "Installed" || typepromote != "instant") || OS == "Android" )
                         
                         if (status != "Installed" || typepromote != "instant") {
                             self.DataTableCellTemp.append(OffersInfo(offerid: maindata["offerId"] as! String, name: maindata["name"] as! String, point: ((maindata["point"] as? NSString)?.integerValue)!,point_rrs: ((maindata["point_rrs"] as? NSString)?.integerValue)!, os: maindata["OS"] as! String, url: maindata["url"] as! String, des: maindata["description"] as! String, urlImage: maindata["imageUrl"] as! String, deeplinking: maindata["deeplinking"] as! String, typepromote: maindata["typepromote"] as! String))
@@ -220,6 +218,11 @@ class SanxuViewController: UIViewController,UITableViewDelegate,UITableViewDataS
             let dataTable = DataTableCell[indexPath.row]
             if dataTable.Typepromote == "instant" {
                 cell.ShareIcon.hidden = true
+            }
+            if dataTable.OS == "iOS" {
+                cell.AndroidIcon.hidden = true
+            }else{
+                cell.AndroidIcon.hidden = false
             }
             cell.OfferName.text = dataTable.Name
             cell.PayoutOffer.text = String(dataTable.Point) + " xu"
@@ -254,7 +257,7 @@ class SanxuViewController: UIViewController,UITableViewDelegate,UITableViewDataS
                     let facebookAction = UIAlertAction(title: "Facebook", style: .Default) { (action) in
                         
                         
-                        let shareText = "Tải ngay \(dataCell.Name)."
+                        let shareText = "Tải ngay \(dataCell.Name). (\(dataCell.OS))"
                         let content:FBSDKShareLinkContent = FBSDKShareLinkContent()
                         content.contentTitle = shareText
                         content.contentDescription = dataCell.Des
@@ -346,7 +349,9 @@ class SanxuViewController: UIViewController,UITableViewDelegate,UITableViewDataS
                     if Offers.count>0 {
                         for i in 0..<Offers.count {
                             let maindata = Offers[i]
+                            if maindata["OS"] as! String == "iOS" {
                             self.RRSListOffers.append(OffersInfo(offerid: maindata["offerId"] as! String, name: maindata["name"] as! String, point: maindata["point"] as! Int,point_rrs: maindata["point_rrs"] as! Int, os: maindata["OS"] as! String, url: maindata["url"] as! String, des: maindata["description"] as! String, urlImage: maindata["imageUrl"] as! String, deeplinking: maindata["deeplinking"] as! String, typepromote: maindata["typepromote"] as! String))
+                            }
                         }
                     }
                 }
@@ -392,6 +397,7 @@ class SanxuViewController: UIViewController,UITableViewDelegate,UITableViewDataS
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         if DataTableCell.count > 0 {
             SanxuDownloadData = DataTableCell[indexPath.row]
+            if SanxuDownloadData?.OS == "iOS"{
             let offerId:String = (SanxuDownloadData?.OfferId)!
             let key:String = "StatusDownload\(offerId)"
             let OffersDownloadInfo:NSUserDefaults = NSUserDefaults.standardUserDefaults()
@@ -412,7 +418,33 @@ class SanxuViewController: UIViewController,UITableViewDelegate,UITableViewDataS
                     self.performSegueWithIdentifier("showOfferIndentifier", sender: nil)
             
             }
-        
+            } else{
+            //Thong bao chia se qua Android
+            let alert = UIAlertController(title: "", message: "Đây là ứng dụng cho máy Android, hãy chia sẻ ứng dụng này tới bạn bè dùng máy Android để có thể kiếm \(SanxuDownloadData!.Point) Xu.", preferredStyle: .Alert)
+            let alertShareAction = UIAlertAction(title: "Chia sẻ", style: .Default, handler: { (action) in
+                
+                
+                let shareText = "Tải ngay \(self.SanxuDownloadData!.Name). (\(self.SanxuDownloadData!.OS))"
+                let content:FBSDKShareLinkContent = FBSDKShareLinkContent()
+                content.contentTitle = shareText
+                content.contentDescription = self.SanxuDownloadData?.Des
+                content.contentURL = NSURL(string: LinkServe().UrlTracking+"?uid=\(UserModel().UserId())&OfferId=\(self.SanxuDownloadData!.OfferId)")
+                let imageUrlOffer = self.UrlImageCell[indexPath.row]
+                content.imageURL = imageUrlOffer                
+                let dialog:FBSDKShareDialog = FBSDKShareDialog()
+                dialog.shareContent = content
+                
+                if !dialog.canShow(){
+                    print("show dialog")
+                    dialog.mode = FBSDKShareDialogMode.Browser
+                }
+                dialog.show()
+            })
+                let alertCancelAction = UIAlertAction(title: "Cancel", style: .Default, handler: nil)
+                alert.addAction(alertShareAction)
+                alert.addAction(alertCancelAction)
+                self.presentViewController(alert, animated: true, completion: nil)
+            }
         }
         
     }
